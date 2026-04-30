@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Baloo+Da+2:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Hind Siliguri", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Baloo Da 2", cursive;
+
+  --color-yellow: #FFD60A;
+  --color-orange: #FF6B35;
+  --color-green: #06D6A0;
+  --color-blue: #118AB2;
+  --color-purple: #7B5EA7;
+  --color-red: #EF476F;
+  --color-sky: #73C2FB;
+  --color-bg: #FFFBF0;
+  --color-card: #FFFFFF;
+  --color-text: #1A1A2E;
+  --color-text-light: #555577;
+
+  --radius-xl: 20px;
+}
+
+@layer base {
+  body {
+    @apply bg-bg text-text font-sans;
+  }
+}
+
+.markdown-body {
+  @apply leading-relaxed;
+}
